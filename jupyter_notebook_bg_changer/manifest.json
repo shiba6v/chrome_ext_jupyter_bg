@@ -6,12 +6,8 @@
     "content_scripts": [{
         "js": ["js/main.js"],
         "matches": [
-            "http://localhost:*/notebooks/*",
-            "http://127.0.0.1:*/notebooks/*",
-            "http://0.0.0.0:*/notebooks/*",
-            "http://localhost:*/edit/*",
-            "http://127.0.0.1:*/edit/*",
-            "http://0.0.0.0:*/edit/*"
+            "http://*/notebooks/*",
+            "http://*/edit/*"
         ]
     }],
     "manifest_version": 2
