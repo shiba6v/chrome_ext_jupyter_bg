@@ -6,12 +6,11 @@
     "content_scripts": [{
         "js": ["js/main.js"],
         "matches": [
-            "http://*/notebooks/*",
-            "http://*/edit/*"
+            "*://*/notebooks/*",
+            "*://*/edit/*"
         ]
     }],
     "permissions": [
-        "activeTab"
     ],
     "manifest_version": 2
 }
