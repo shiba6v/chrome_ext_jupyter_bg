@@ -6,11 +6,33 @@
     "content_scripts": [{
         "js": ["js/main.js"],
         "matches": [
-            "*://*/notebooks/*",
-            "*://*/edit/*"
+            "http://localhost/notebooks/*",
+            "http://localhost/edit/*",
+            "http://0.0.0.0/notebooks/*",
+            "http://0.0.0.0/edit/*",
+            "http://127.0.0.1/notebooks/*",
+            "http://127.0.0.1/edit/*",
+            "https://localhost/notebooks/",
+            "https://localhost/edit/",
+            "https://0.0.0.0/notebooks/*",
+            "https://0.0.0.0/edit/*",
+            "https://127.0.0.1/notebooks/*",
+            "https://127.0.0.1/edit/*"
         ]
     }],
     "permissions": [
+        "http://localhost/notebooks/*",
+        "http://localhost/edit/*",
+        "http://0.0.0.0/notebooks/*",
+        "http://0.0.0.0/edit/*",
+        "http://127.0.0.1/notebooks/*",
+        "http://127.0.0.1/edit/*",
+        "https://localhost/notebooks/",
+        "https://localhost/edit/",
+        "https://0.0.0.0/notebooks/*",
+        "https://0.0.0.0/edit/*",
+        "https://127.0.0.1/notebooks/*",
+        "https://127.0.0.1/edit/*"
     ],
     "manifest_version": 2
 }
